@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <!-- AWS SDK for CDN-->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.195.0.min.js"></script>
+    <!-- jQueryCDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <!-- WebFont -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="shortcut icon" href="">
+  </head>
+  <body>
+    <h3>Face Search</h3>
+    <content class="contents">
+      <div id="input_box">
+        <div class="preview">
+          <label for="imgFile" class="input_camera">
+            <i class="fas fa-camera"></i>
+            <span>写真を撮る</span>
+            <input id="imgFile" type="file" accept="image/*" style="display:none">
+          </label>
+        </div>
+        <div id="targetImg"></div>
+      </div>
+      <div id="search_result">
+        <div id="search_result_inner">
+          <div class='img_box result'><img id="facepic"/></div>
+          <div class='profile-detail'></div>
+        </div>
+      </div>
+    </content>
+    <div id="loading_wall">
+      <div id="circularG">
+      	<div id="circularG_1" class="circularG"></div>
+      	<div id="circularG_2" class="circularG"></div>
+      	<div id="circularG_3" class="circularG"></div>
+      	<div id="circularG_4" class="circularG"></div>
+      	<div id="circularG_5" class="circularG"></div>
+      	<div id="circularG_6" class="circularG"></div>
+      	<div id="circularG_7" class="circularG"></div>
+      	<div id="circularG_8" class="circularG"></div>
+      </div>
+    </div>
+    <!-- SCRIPTS -->
+    <script src="config.js"></script>
+    <script src="rekognition.js"></script>
+  </body>
+</html>
