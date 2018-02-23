@@ -3,4 +3,4 @@ face search demo app with AWS Rekognition
 
 # env
 AWS SDK for Javascript (web browser)  
-JQuery 3.1.1
+jQuery 3.1.1
